@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-size: 18px;
+  background: #fff;
+  font-family: "Bai Jamjuree", sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #4d545d;
+  font-weight: 600;
+}
+
+p,
+a {
+  color: #d6dadd;
+  font-weight: 400;
+}
+
+.button {
+  margin-top: 3rem;
+}
+.button a {
+  padding: 1rem 3rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  display: inline-block;
+  margin: 0 4px;
+  color: #fff;
+  font-weight: 400;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.button a:nth-child(1) {
+  background: #26bba5;
+}
+.button a:nth-child(2) {
+  background: #6073fe;
+}
+.button a:hover {
+  opacity: 0.7;
+}
+
+header {
+  min-height: 100vh;
+  background: url("./images/bg-header-desktop.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+header .main-header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+}
+header .main-header-content img {
+  width: 130px;
+}
+header .main-header-content h1 {
+  font-size: 3rem;
+}
+header .main-header-content p {
+  margin: 1rem auto;
+  max-width: 650px;
+  line-height: 1.5;
+}
+
+.track .text {
+  max-width: 650px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.track .text h2 {
+  font-size: 2.5rem;
+}
+.track .text p {
+  margin-top: 20px;
+  line-height: 1.5;
+}
+.track article {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+.track article .track-image {
+  overflow-x: hidden;
+}
+.track article .track-image img {
+  width: 100%;
+  height: 100%;
+  margin-left: -30px;
+}
+.track article .track-flex {
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
+}
+.track article .track-flex div {
+  max-width: 400px;
+}
+.track article .track-flex div h3 {
+  font-size: 1.5rem;
+}
+.track article .track-flex div p {
+  margin: 0.6rem 0;
+  line-height: 1.5;
+}
+
+.clipboard .text {
+  max-width: 650px;
+  margin: 6rem auto;
+  text-align: center;
+}
+.clipboard .text h2 {
+  font-size: 2.5rem;
+}
+.clipboard .text p {
+  margin-top: 20px;
+  line-height: 1.5;
+}
+.clipboard article {
+  max-width: 900px;
+  margin: auto;
+}
+.clipboard article img {
+  width: 100%;
+}
+
+.workflow .text {
+  max-width: 650px;
+  margin: 6rem auto;
+  text-align: center;
+}
+.workflow .text h2 {
+  font-size: 2.5rem;
+}
+.workflow .text p {
+  margin-top: 20px;
+  line-height: 1.5;
+}
+.workflow .workflow-icons {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+.workflow .workflow-icons div {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+.workflow .workflow-icons div img {
+  width: 40px;
+}
+.workflow .workflow-icons div h3 {
+  font-size: 1.5rem;
+}
+.workflow .workflow-icons div p {
+  line-height: 1.5;
+}
+.workflow .sponsors {
+  overflow-x: hidden;
+}
+.workflow .sponsors .scoll-x-animation {
+  animation: scroll-x 20s infinite linear;
+  -webkit-animation: scroll-x 20s infinite linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+@keyframes scroll-x {
+  0% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  }
+}
+.workflow .sponsors .scoll-x-animation img {
+  width: 160px;
+}
+
+.clipboard-text {
+  padding: 4rem;
+  text-align: center;
+}
+.clipboard-text div {
+  margin: 6rem 0;
+}
+.clipboard-text h2 {
+  font-size: 2.5rem;
+}
+.clipboard-text p {
+  margin: 1rem auto;
+  max-width: 650px;
+  line-height: 1.5;
+}
+.clipboard-text .button {
+  margin-top: unset;
+}
+
+footer {
+  background: #f5f6f8;
+  padding: 2rem;
+}
+footer .footer-container {
+  margin: 0 auto;
+  display: flex;
+  max-width: 1200px;
+}
+footer .footer-container .logo {
+  flex: 0.3;
+}
+footer .footer-container .logo img {
+  width: 50px;
+}
+footer .footer-container nav {
+  flex: 0.6;
+}
+footer .footer-container nav ul {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+footer .footer-container nav ul li a {
+  color: #9a9ea1;
+  margin: 0 10px;
+}
+footer .footer-container .social-media {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* @media screen and (max-width: 1108px) {
+  .sponsors {
+    grid-template-columns: repeat(3, 1fr) !important;
+    place-items: center;
+  }
+} */
+@media screen and (max-width: 900px) {
+  footer .footer-container nav {
+    flex: 1;
+  }
+}
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 2rem !important;
+  }
+  h2 {
+    font-size: 1.6rem !important;
+  }
+  h3 {
+    font-size: 1.2rem !important;
+  }
+  p {
+    font-size: 1rem !important;
+  }
+  .track article {
+    flex-direction: column;
+  }
+  .track article .track-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .track article .track-image img {
+    margin: 0;
+    width: 90%;
+  }
+  .track article .track-flex {
+    align-items: center;
+    width: 90%;
+  }
+  /* .sponsors {
+    grid-template-columns: repeat(2, 1fr) !important;
+    margin: 1rem auto;
+    padding: 0;
+  } */
+  .button {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: 90%;
+    margin-inline: auto;
+  }
+  .clipboard .text,
+  .workflow .text {
+    margin: 3rem auto;
+  }
+  .clipboard-text {
+    padding: 0;
+  }
+  .clipboard-text div {
+    margin: 3rem auto;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  header {
+    background: url("./images/bg-header-mobile.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .workflow-icons {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  footer .footer-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+  }
+  footer .footer-container nav {
+    flex: 1;
+  }
+  footer .footer-container nav ul {
+    flex-direction: column;
+  }
+  footer .footer-container div {
+    flex-direction: column;
+    flex: 1;
+  }
+} /*# sourceMappingURL=style.css.map */
